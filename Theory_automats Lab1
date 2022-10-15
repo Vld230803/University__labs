@@ -1,0 +1,1743 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, StdCtrls,
+  ComCtrls, ExtCtrls;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
+    Button7: TButton;
+    ComboBox10: TComboBox;
+    ComboBox11: TComboBox;
+    ComboBox2: TComboBox;
+    ComboBox3: TComboBox;
+    ComboBox4: TComboBox;
+    ComboBox5: TComboBox;
+    ComboBox6: TComboBox;
+    ComboBox7: TComboBox;
+    ComboBox8: TComboBox;
+    ComboBox9: TComboBox;
+    Edit1: TEdit;
+    Edit10: TEdit;
+    Edit11: TEdit;
+    Edit12: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    Edit7: TEdit;
+    Edit8: TEdit;
+    Edit9: TEdit;
+    Image1: TImage;
+    Image10: TImage;
+    Image11: TImage;
+    Image12: TImage;
+    Image13: TImage;
+    Image14: TImage;
+    Image15: TImage;
+    Image16: TImage;
+    Image17: TImage;
+    Image18: TImage;
+    Image19: TImage;
+    Image2: TImage;
+    Image20: TImage;
+    Image21: TImage;
+    Image22: TImage;
+    Image23: TImage;
+    Image24: TImage;
+    Image25: TImage;
+    Image26: TImage;
+    Image27: TImage;
+    Image28: TImage;
+    Image29: TImage;
+    Image3: TImage;
+    Image30: TImage;
+    Image31: TImage;
+    Image32: TImage;
+    Image33: TImage;
+    Image34: TImage;
+    Image35: TImage;
+    Image36: TImage;
+    Image37: TImage;
+    Image38: TImage;
+    Image39: TImage;
+    Image4: TImage;
+    Image40: TImage;
+    Image41: TImage;
+    Image42: TImage;
+    Image5: TImage;
+    Image6: TImage;
+    Image7: TImage;
+    Image8: TImage;
+    Image9: TImage;
+    Memo1: TImage;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    MainMenu1: TMainMenu;
+    Memo10: TImage;
+    Memo2: TImage;
+    Memo3: TImage;
+    Memo4: TImage;
+    Memo5: TImage;
+    Memo6: TImage;
+    Memo7: TImage;
+    Memo8: TImage;
+    Memo9: TImage;
+    MenuItem1: TMenuItem;
+    MenuItem2: TMenuItem;
+    MenuItem3: TMenuItem;
+    MenuItem4: TMenuItem;
+    MenuItem5: TMenuItem;
+    MenuItem6: TMenuItem;
+    MenuItem7: TMenuItem;
+    MenuItem8: TMenuItem;
+    MenuItem9: TMenuItem;
+    Timer1: TTimer;
+    TrackBar1: TTrackBar;
+    TrackBar2: TTrackBar;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
+    procedure ComboBox10Select(Sender: TObject);
+    procedure ComboBox11Select(Sender: TObject);
+    procedure ComboBox2Change(Sender: TObject);
+    procedure ComboBox2Select(Sender: TObject);
+    procedure ComboBox3Select(Sender: TObject);
+    procedure ComboBox4Select(Sender: TObject);
+    procedure ComboBox5Select(Sender: TObject);
+    procedure ComboBox6Select(Sender: TObject);
+    procedure ComboBox7Select(Sender: TObject);
+    procedure ComboBox8Select(Sender: TObject);
+    procedure ComboBox9Select(Sender: TObject);
+    procedure Edit11Change(Sender: TObject);
+    procedure Edit12Change(Sender: TObject);
+    procedure Edit13Change(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure MenuItem7Click(Sender: TObject);
+    procedure MenuItem8Click(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+    procedure TrackBar1Change(Sender: TObject);
+    procedure TrackBar2Change(Sender: TObject);
+  private
+
+  public
+
+  end;
+
+var
+  Form1: TForm1;
+  a,b: integer;
+  k,g,l,m,n,o,q,w,e,ee: integer;
+  u1,u2,u3,u4,u5,u6,u7,u8,u9,u10: integer;
+  u11,u22,u33,u44,u55,u66,u77,u88,u99,u1010: integer;
+  kek: integer;
+  lampo,lamp: integer;
+  lampg:boolean;
+  p, pp, ppp, pppp, p5, p6, p7, p8, p9, p10: integer;
+
+implementation
+
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+
+  //--скрываем картинки с местами
+  Image11.Visible := False;
+  Image12.Visible := False;
+  Image13.Visible := False;
+  Image14.Visible := False;
+  Image15.Visible := False;
+  Image16.Visible := False;
+  Image17.Visible := False;
+  Image18.Visible := False;
+  Image19.Visible := False;
+  Image20.Visible := False;
+  Image21.Visible := False;
+  Image22.Visible := False;
+  Image23.Visible := False;
+  Image24.Visible := False;
+  Image25.Visible := False;
+  Image26.Visible := False;
+  Image27.Visible := False;
+  Image28.Visible := False;
+  Image29.Visible := False;
+  Image30.Visible := False;
+  Image31.Visible := False;
+  Image32.Visible := False;
+  Image33.Visible := False;
+  Image34.Visible := False;
+  Image35.Visible := False;
+  Image36.Visible := False;
+  Image37.Visible := False;
+  Image38.Visible := False;
+  Image39.Visible := False;
+  Image40.Visible := False;
+
+  //--переменые для смены картинок при работе с их движением
+
+  k:=1;
+  g:=1;
+  l:=1;
+  m:=1;
+  n:=1;
+  o:=1;
+  q:=1;
+  w:=1;
+  e:=1;
+  ee:=1;
+
+  p:=0;
+  pp:=0;
+  ppp:=0;
+  pppp:=0;
+  p5:=0;
+  p6:=0;
+  p7:=0;
+  p8:=0;
+  p9:=0;
+  p10:=0;
+
+  //--таймер при запуске не активен
+  Timer1.Enabled := False;
+
+  //--задание значений для ползунков
+  Edit11.Text := IntToStr(25);
+  Edit12.Text := IntToStr(50);
+
+  //--создание в картинках объектов в виде прямоугольников
+  Memo1.SendToBack;
+  Memo1.Canvas.FillRect(Memo1.ClientRect);
+
+  Memo2.SendToBack;
+  Memo2.Canvas.FillRect(Memo2.ClientRect);
+
+  Memo3.SendToBack;
+  Memo3.Canvas.FillRect(Memo3.ClientRect);
+
+  Memo4.SendToBack;
+  Memo4.Canvas.FillRect(Memo4.ClientRect);
+
+  Memo5.SendToBack;
+  Memo5.Canvas.FillRect(Memo5.ClientRect);
+
+  Memo6.SendToBack;
+  Memo6.Canvas.FillRect(Memo6.ClientRect);
+
+  Memo7.SendToBack;
+  Memo7.Canvas.FillRect(Memo7.ClientRect);
+
+  Memo8.SendToBack;
+  Memo8.Canvas.FillRect(Memo8.ClientRect);
+
+  Memo9.SendToBack;
+  Memo9.Canvas.FillRect(Memo9.ClientRect);
+
+  Memo10.SendToBack;
+  Memo10.Canvas.FillRect(Memo10.ClientRect);
+
+  //--скрыть объекты цветов при запуске программы
+  Label2.Visible := False;
+
+  Edit1.Visible := False;
+  Edit2.Visible := False;
+  Edit3.Visible := False;
+  Edit4.Visible := False;
+  Edit5.Visible := False;
+  Edit6.Visible := False;
+  Edit7.Visible := False;
+  Edit8.Visible := False;
+  Edit9.Visible := False;
+  Edit10.Visible := False;
+
+  ComboBox2.Visible := False;
+  ComboBox3.Visible := False;
+  ComboBox4.Visible := False;
+  ComboBox5.Visible := False;
+  ComboBox6.Visible := False;
+  ComboBox7.Visible := False;
+  ComboBox8.Visible := False;
+  ComboBox9.Visible := False;
+  ComboBox10.Visible := False;
+  ComboBox11.Visible := False;
+
+  Button1.Visible := False;
+  Button2.Visible := False;
+
+  //--скрыть объекты начальных заполнений при запуске программы
+  Label1.Visible := False;
+  Label3.Visible := False;
+
+  Edit11.Visible := False;
+  Edit12.Visible := False;
+
+  TrackBar1.Visible := False;
+  TrackBar2.Visible := False;
+
+  Button5.Visible := False;
+  Button3.Visible := False;
+
+
+  //--заполнение комбобоксов
+  ComboBox2.Items.Add('Розовый');
+  ComboBox2.Items.Add('Зелёный');
+  ComboBox2.Items.Add('Белый');
+  ComboBox2.Items.Add('Красный');
+  ComboBox2.Items.Add('Жёлтый');
+  ComboBox2.Items.Add('Сиреневый');
+  ComboBox2.Items.Add('Голубой');
+  ComboBox2.Items.Add('Серебряный');
+  ComboBox2.Items.Add('Синий');
+  ComboBox2.Items.Add('Цвет денег');
+  ComboBox2.Items.Add('Бирюзовый');
+  ComboBox2.Items.Add('Сине-зелёный');
+  ComboBox2.Items.Add('Тёмно-синий');
+  ComboBox2.Items.Add('Тёмно-серый');
+  ComboBox2.Items.Add('Тёмно-красный');
+
+  ComboBox3.Items.Add('Розовый');
+  ComboBox3.Items.Add('Зелёный');
+  ComboBox3.Items.Add('Белый');
+  ComboBox3.Items.Add('Красный');
+  ComboBox3.Items.Add('Жёлтый');
+  ComboBox3.Items.Add('Сиреневый');
+  ComboBox3.Items.Add('Голубой');
+  ComboBox3.Items.Add('Серебряный');
+  ComboBox3.Items.Add('Синий');
+  ComboBox3.Items.Add('Цвет денег');
+  ComboBox3.Items.Add('Бирюзовый');
+  ComboBox3.Items.Add('Сине-зелёный');
+  ComboBox3.Items.Add('Тёмно-синий');
+  ComboBox3.Items.Add('Тёмно-серый');
+  ComboBox3.Items.Add('Тёмно-красный');
+
+  ComboBox4.Items.Add('Розовый');
+  ComboBox4.Items.Add('Зелёный');
+  ComboBox4.Items.Add('Белый');
+  ComboBox4.Items.Add('Красный');
+  ComboBox4.Items.Add('Жёлтый');
+  ComboBox4.Items.Add('Сиреневый');
+  ComboBox4.Items.Add('Голубой');
+  ComboBox4.Items.Add('Серебряный');
+  ComboBox4.Items.Add('Синий');
+  ComboBox4.Items.Add('Цвет денег');
+  ComboBox4.Items.Add('Бирюзовый');
+  ComboBox4.Items.Add('Сине-зелёный');
+  ComboBox4.Items.Add('Тёмно-синий');
+  ComboBox4.Items.Add('Тёмно-серый');
+  ComboBox4.Items.Add('Тёмно-красный');
+
+  ComboBox5.Items.Add('Розовый');
+  ComboBox5.Items.Add('Зелёный');
+  ComboBox5.Items.Add('Белый');
+  ComboBox5.Items.Add('Красный');
+  ComboBox5.Items.Add('Жёлтый');
+  ComboBox5.Items.Add('Сиреневый');
+  ComboBox5.Items.Add('Голубой');
+  ComboBox5.Items.Add('Серебряный');
+  ComboBox5.Items.Add('Синий');
+  ComboBox5.Items.Add('Цвет денег');
+  ComboBox5.Items.Add('Бирюзовый');
+  ComboBox5.Items.Add('Сине-зелёный');
+  ComboBox5.Items.Add('Тёмно-синий');
+  ComboBox5.Items.Add('Тёмно-серый');
+  ComboBox5.Items.Add('Тёмно-красный');
+
+  ComboBox6.Items.Add('Розовый');
+  ComboBox6.Items.Add('Зелёный');
+  ComboBox6.Items.Add('Белый');
+  ComboBox6.Items.Add('Красный');
+  ComboBox6.Items.Add('Жёлтый');
+  ComboBox6.Items.Add('Сиреневый');
+  ComboBox6.Items.Add('Голубой');
+  ComboBox6.Items.Add('Серебряный');
+  ComboBox6.Items.Add('Синий');
+  ComboBox6.Items.Add('Цвет денег');
+  ComboBox6.Items.Add('Бирюзовый');
+  ComboBox6.Items.Add('Сине-зелёный');
+  ComboBox6.Items.Add('Тёмно-синий');
+  ComboBox6.Items.Add('Тёмно-серый');
+  ComboBox6.Items.Add('Тёмно-красный');
+
+  ComboBox7.Items.Add('Розовый');
+  ComboBox7.Items.Add('Зелёный');
+  ComboBox7.Items.Add('Белый');
+  ComboBox7.Items.Add('Красный');
+  ComboBox7.Items.Add('Жёлтый');
+  ComboBox7.Items.Add('Сиреневый');
+  ComboBox7.Items.Add('Голубой');
+  ComboBox7.Items.Add('Серебряный');
+  ComboBox7.Items.Add('Синий');
+  ComboBox7.Items.Add('Цвет денег');
+  ComboBox7.Items.Add('Бирюзовый');
+  ComboBox7.Items.Add('Сине-зелёный');
+  ComboBox7.Items.Add('Тёмно-синий');
+  ComboBox7.Items.Add('Тёмно-серый');
+  ComboBox7.Items.Add('Тёмно-красный');
+
+  ComboBox8.Items.Add('Розовый');
+  ComboBox8.Items.Add('Зелёный');
+  ComboBox8.Items.Add('Белый');
+  ComboBox8.Items.Add('Красный');
+  ComboBox8.Items.Add('Жёлтый');
+  ComboBox8.Items.Add('Сиреневый');
+  ComboBox8.Items.Add('Голубой');
+  ComboBox8.Items.Add('Серебряный');
+  ComboBox8.Items.Add('Синий');
+  ComboBox8.Items.Add('Цвет денег');
+  ComboBox8.Items.Add('Бирюзовый');
+  ComboBox8.Items.Add('Сине-зелёный');
+  ComboBox8.Items.Add('Тёмно-синий');
+  ComboBox8.Items.Add('Тёмно-серый');
+  ComboBox8.Items.Add('Тёмно-красный');
+
+  ComboBox9.Items.Add('Розовый');
+  ComboBox9.Items.Add('Зелёный');
+  ComboBox9.Items.Add('Белый');
+  ComboBox9.Items.Add('Красный');
+  ComboBox9.Items.Add('Жёлтый');
+  ComboBox9.Items.Add('Сиреневый');
+  ComboBox9.Items.Add('Голубой');
+  ComboBox9.Items.Add('Серебряный');
+  ComboBox9.Items.Add('Синий');
+  ComboBox9.Items.Add('Цвет денег');
+  ComboBox9.Items.Add('Бирюзовый');
+  ComboBox9.Items.Add('Сине-зелёный');
+  ComboBox9.Items.Add('Тёмно-синий');
+  ComboBox9.Items.Add('Тёмно-серый');
+  ComboBox9.Items.Add('Тёмно-красный');
+
+  ComboBox10.Items.Add('Розовый');
+  ComboBox10.Items.Add('Зелёный');
+  ComboBox10.Items.Add('Белый');
+  ComboBox10.Items.Add('Красный');
+  ComboBox10.Items.Add('Жёлтый');
+  ComboBox10.Items.Add('Сиреневый');
+  ComboBox10.Items.Add('Голубой');
+  ComboBox10.Items.Add('Серебряный');
+  ComboBox10.Items.Add('Синий');
+  ComboBox10.Items.Add('Цвет денег');
+  ComboBox10.Items.Add('Бирюзовый');
+  ComboBox10.Items.Add('Сине-зелёный');
+  ComboBox10.Items.Add('Тёмно-синий');
+  ComboBox10.Items.Add('Тёмно-серый');
+  ComboBox10.Items.Add('Тёмно-красный');
+
+  ComboBox11.Items.Add('Розовый');
+  ComboBox11.Items.Add('Зелёный');
+  ComboBox11.Items.Add('Белый');
+  ComboBox11.Items.Add('Красный');
+  ComboBox11.Items.Add('Жёлтый');
+  ComboBox11.Items.Add('Сиреневый');
+  ComboBox11.Items.Add('Голубой');
+  ComboBox11.Items.Add('Серебряный');
+  ComboBox11.Items.Add('Синий');
+  ComboBox11.Items.Add('Цвет денег');
+  ComboBox11.Items.Add('Бирюзовый');
+  ComboBox11.Items.Add('Сине-зелёный');
+  ComboBox11.Items.Add('Тёмно-синий');
+  ComboBox11.Items.Add('Тёмно-серый');
+  ComboBox11.Items.Add('Тёмно-красный');
+
+
+//--раскраска дорожек рандомом при запуске программы
+randomize;
+
+  a := random(5);
+
+  if a=0 then
+  begin
+    Memo1.Picture.LoadFromFile('4.bmp');
+    Memo2.Picture.LoadFromFile('7.bmp');
+    Memo3.Picture.LoadFromFile('2.bmp');
+    Memo4.Picture.LoadFromFile('1.bmp');
+    Memo5.Picture.LoadFromFile('6.bmp');
+    Memo6.Picture.LoadFromFile('8.bmp');
+    Memo7.Picture.LoadFromFile('5.bmp');
+    Memo8.Picture.LoadFromFile('3.bmp');
+    Memo9.Picture.LoadFromFile('10.bmp');
+    Memo10.Picture.LoadFromFile('9.bmp');
+  end;
+
+  if a=1 then
+  begin
+    Memo1.Picture.LoadFromFile('10.bmp');
+    Memo2.Picture.LoadFromFile('9.bmp');
+    Memo3.Picture.LoadFromFile('8.bmp');
+    Memo4.Picture.LoadFromFile('7.bmp');
+    Memo5.Picture.LoadFromFile('6.bmp');
+    Memo6.Picture.LoadFromFile('5.bmp');
+    Memo7.Picture.LoadFromFile('4.bmp');
+    Memo8.Picture.LoadFromFile('3.bmp');
+    Memo9.Picture.LoadFromFile('2.bmp');
+    Memo10.Picture.LoadFromFile('1.bmp');
+  end;
+
+  if a=2 then
+  begin
+    Memo1.Picture.LoadFromFile('1.bmp');
+    Memo2.Picture.LoadFromFile('2.bmp');
+    Memo3.Picture.LoadFromFile('3.bmp');
+    Memo4.Picture.LoadFromFile('4.bmp');
+    Memo5.Picture.LoadFromFile('5.bmp');
+    Memo6.Picture.LoadFromFile('6.bmp');
+    Memo7.Picture.LoadFromFile('7.bmp');
+    Memo8.Picture.LoadFromFile('8.bmp');
+    Memo9.Picture.LoadFromFile('9.bmp');
+    Memo10.Picture.LoadFromFile('10.bmp');
+  end;
+
+  if a=3 then
+  begin
+    Memo1.Picture.LoadFromFile('5.bmp');
+    Memo2.Picture.LoadFromFile('4.bmp');
+    Memo3.Picture.LoadFromFile('3.bmp');
+    Memo4.Picture.LoadFromFile('2.bmp');
+    Memo5.Picture.LoadFromFile('1.bmp');
+    Memo6.Picture.LoadFromFile('6.bmp');
+    Memo7.Picture.LoadFromFile('7.bmp');
+    Memo8.Picture.LoadFromFile('8.bmp');
+    Memo9.Picture.LoadFromFile('9.bmp');
+    Memo10.Picture.LoadFromFile('10.bmp');
+  end;
+
+  if a=4 then
+  begin
+    Memo1.Picture.LoadFromFile('5.bmp');
+    Memo2.Picture.LoadFromFile('6.bmp');
+    Memo3.Picture.LoadFromFile('7.bmp');
+    Memo4.Picture.LoadFromFile('8.bmp');
+    Memo5.Picture.LoadFromFile('9.bmp');
+    Memo6.Picture.LoadFromFile('10.bmp');
+    Memo7.Picture.LoadFromFile('1.bmp');
+    Memo8.Picture.LoadFromFile('2.bmp');
+    Memo9.Picture.LoadFromFile('3.bmp');
+    Memo10.Picture.LoadFromFile('4.bmp');
+  end;
+end;
+
+
+//--раскраска дорожек с помощью выбора в комбобоксах
+procedure TForm1.ComboBox10Select(Sender: TObject);
+begin
+  case ComboBox10.ItemIndex of
+  0: Memo9.Picture.LoadFromFile('1.bmp');
+  1: Memo9.Picture.LoadFromFile('2.bmp');
+  2: Memo9.Picture.LoadFromFile('3.bmp');
+  3: Memo9.Picture.LoadFromFile('4.bmp');
+  4: Memo9.Picture.LoadFromFile('5.bmp');
+  5: Memo9.Picture.LoadFromFile('6.bmp');
+  6: Memo9.Picture.LoadFromFile('7.bmp');
+  7: Memo9.Picture.LoadFromFile('8.bmp');
+  8: Memo9.Picture.LoadFromFile('9.bmp');
+  9: Memo9.Picture.LoadFromFile('10.bmp');
+  10: Memo9.Picture.LoadFromFile('11.bmp');
+  11: Memo9.Picture.LoadFromFile('12.bmp');
+  12: Memo9.Picture.LoadFromFile('13.bmp');
+  13: Memo9.Picture.LoadFromFile('14.bmp');
+  14: Memo9.Picture.LoadFromFile('15.bmp');
+  end;
+end;
+
+procedure TForm1.ComboBox11select(Sender: TObject);
+begin
+  case ComboBox11.ItemIndex of
+  0: Memo10.Picture.LoadFromFile('1.bmp');
+  1: Memo10.Picture.LoadFromFile('2.bmp');
+  2: Memo10.Picture.LoadFromFile('3.bmp');
+  3: Memo10.Picture.LoadFromFile('4.bmp');
+  4: Memo10.Picture.LoadFromFile('5.bmp');
+  5: Memo10.Picture.LoadFromFile('6.bmp');
+  6: Memo10.Picture.LoadFromFile('7.bmp');
+  7: Memo10.Picture.LoadFromFile('8.bmp');
+  8: Memo10.Picture.LoadFromFile('9.bmp');
+  9: Memo10.Picture.LoadFromFile('10.bmp');
+  10: Memo10.Picture.LoadFromFile('11.bmp');
+  11: Memo10.Picture.LoadFromFile('12.bmp');
+  12: Memo10.Picture.LoadFromFile('13.bmp');
+  13: Memo10.Picture.LoadFromFile('14.bmp');
+  14: Memo10.Picture.LoadFromFile('15.bmp');
+  end;
+end;
+
+procedure TForm1.ComboBox2Change(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.ComboBox2Select(Sender: TObject);
+begin
+  case ComboBox2.ItemIndex of
+  0: Memo1.Picture.LoadFromFile('1.bmp');
+  1: Memo1.Picture.LoadFromFile('2.bmp');
+  2: Memo1.Picture.LoadFromFile('3.bmp');
+  3: Memo1.Picture.LoadFromFile('4.bmp');
+  4: Memo1.Picture.LoadFromFile('5.bmp');
+  5: Memo1.Picture.LoadFromFile('6.bmp');
+  6: Memo1.Picture.LoadFromFile('7.bmp');
+  7: Memo1.Picture.LoadFromFile('8.bmp');
+  8: Memo1.Picture.LoadFromFile('9.bmp');
+  9: Memo1.Picture.LoadFromFile('10.bmp');
+  10: Memo1.Picture.LoadFromFile('11.bmp');
+  11: Memo1.Picture.LoadFromFile('12.bmp');
+  12: Memo1.Picture.LoadFromFile('13.bmp');
+  13: Memo1.Picture.LoadFromFile('14.bmp');
+  14: Memo1.Picture.LoadFromFile('15.bmp');
+  end;
+end;
+
+procedure TForm1.ComboBox3Select(Sender: TObject);
+begin
+  case ComboBox3.ItemIndex of
+  0: Memo2.Picture.LoadFromFile('1.bmp');
+  1: Memo2.Picture.LoadFromFile('2.bmp');
+  2: Memo2.Picture.LoadFromFile('3.bmp');
+  3: Memo2.Picture.LoadFromFile('4.bmp');
+  4: Memo2.Picture.LoadFromFile('5.bmp');
+  5: Memo2.Picture.LoadFromFile('6.bmp');
+  6: Memo2.Picture.LoadFromFile('7.bmp');
+  7: Memo2.Picture.LoadFromFile('8.bmp');
+  8: Memo2.Picture.LoadFromFile('9.bmp');
+  9: Memo2.Picture.LoadFromFile('10.bmp');
+  10: Memo2.Picture.LoadFromFile('11.bmp');
+  11: Memo2.Picture.LoadFromFile('12.bmp');
+  12: Memo2.Picture.LoadFromFile('13.bmp');
+  13: Memo2.Picture.LoadFromFile('14.bmp');
+  14: Memo2.Picture.LoadFromFile('15.bmp');
+  end;
+end;
+
+procedure TForm1.ComboBox4Select(Sender: TObject);
+begin
+  case ComboBox4.ItemIndex of
+  0: Memo3.Picture.LoadFromFile('1.bmp');
+  1: Memo3.Picture.LoadFromFile('2.bmp');
+  2: Memo3.Picture.LoadFromFile('3.bmp');
+  3: Memo3.Picture.LoadFromFile('4.bmp');
+  4: Memo3.Picture.LoadFromFile('5.bmp');
+  5: Memo3.Picture.LoadFromFile('6.bmp');
+  6: Memo3.Picture.LoadFromFile('7.bmp');
+  7: Memo3.Picture.LoadFromFile('8.bmp');
+  8: Memo3.Picture.LoadFromFile('9.bmp');
+  9: Memo3.Picture.LoadFromFile('10.bmp');
+  10: Memo3.Picture.LoadFromFile('11.bmp');
+  11: Memo3.Picture.LoadFromFile('12.bmp');
+  12: Memo3.Picture.LoadFromFile('13.bmp');
+  13: Memo3.Picture.LoadFromFile('14.bmp');
+  14: Memo3.Picture.LoadFromFile('15.bmp');
+  end;
+end;
+
+procedure TForm1.ComboBox5Select(Sender: TObject);
+begin
+  case ComboBox5.ItemIndex of
+  0: Memo4.Picture.LoadFromFile('1.bmp');
+  1: Memo4.Picture.LoadFromFile('2.bmp');
+  2: Memo4.Picture.LoadFromFile('3.bmp');
+  3: Memo4.Picture.LoadFromFile('4.bmp');
+  4: Memo4.Picture.LoadFromFile('5.bmp');
+  5: Memo4.Picture.LoadFromFile('6.bmp');
+  6: Memo4.Picture.LoadFromFile('7.bmp');
+  7: Memo4.Picture.LoadFromFile('8.bmp');
+  8: Memo4.Picture.LoadFromFile('9.bmp');
+  9: Memo4.Picture.LoadFromFile('10.bmp');
+  10: Memo4.Picture.LoadFromFile('11.bmp');
+  11: Memo4.Picture.LoadFromFile('12.bmp');
+  12: Memo4.Picture.LoadFromFile('13.bmp');
+  13: Memo4.Picture.LoadFromFile('14.bmp');
+  14: Memo4.Picture.LoadFromFile('15.bmp');
+  end;
+end;
+
+procedure TForm1.ComboBox6Select(Sender: TObject);
+begin
+  case ComboBox6.ItemIndex of
+  0: Memo5.Picture.LoadFromFile('1.bmp');
+  1: Memo5.Picture.LoadFromFile('2.bmp');
+  2: Memo5.Picture.LoadFromFile('3.bmp');
+  3: Memo5.Picture.LoadFromFile('4.bmp');
+  4: Memo5.Picture.LoadFromFile('5.bmp');
+  5: Memo5.Picture.LoadFromFile('6.bmp');
+  6: Memo5.Picture.LoadFromFile('7.bmp');
+  7: Memo5.Picture.LoadFromFile('8.bmp');
+  8: Memo5.Picture.LoadFromFile('9.bmp');
+  9: Memo5.Picture.LoadFromFile('10.bmp');
+  10: Memo5.Picture.LoadFromFile('11.bmp');
+  11: Memo5.Picture.LoadFromFile('12.bmp');
+  12: Memo5.Picture.LoadFromFile('13.bmp');
+  13: Memo5.Picture.LoadFromFile('14.bmp');
+  14: Memo5.Picture.LoadFromFile('15.bmp');
+  end;
+end;
+
+procedure TForm1.ComboBox7Select(Sender: TObject);
+begin
+  case ComboBox7.ItemIndex of
+  0: Memo6.Picture.LoadFromFile('1.bmp');
+  1: Memo6.Picture.LoadFromFile('2.bmp');
+  2: Memo6.Picture.LoadFromFile('3.bmp');
+  3: Memo6.Picture.LoadFromFile('4.bmp');
+  4: Memo6.Picture.LoadFromFile('5.bmp');
+  5: Memo6.Picture.LoadFromFile('6.bmp');
+  6: Memo6.Picture.LoadFromFile('7.bmp');
+  7: Memo6.Picture.LoadFromFile('8.bmp');
+  8: Memo6.Picture.LoadFromFile('9.bmp');
+  9: Memo6.Picture.LoadFromFile('10.bmp');
+  10: Memo6.Picture.LoadFromFile('11.bmp');
+  11: Memo6.Picture.LoadFromFile('12.bmp');
+  12: Memo6.Picture.LoadFromFile('13.bmp');
+  13: Memo6.Picture.LoadFromFile('14.bmp');
+  14: Memo6.Picture.LoadFromFile('15.bmp');
+  end;
+end;
+
+procedure TForm1.ComboBox8Select(Sender: TObject);
+begin
+  case ComboBox8.ItemIndex of
+    0: Memo7.Picture.LoadFromFile('1.bmp');
+    1: Memo7.Picture.LoadFromFile('2.bmp');
+    2: Memo7.Picture.LoadFromFile('3.bmp');
+    3: Memo7.Picture.LoadFromFile('4.bmp');
+    4: Memo7.Picture.LoadFromFile('5.bmp');
+    5: Memo7.Picture.LoadFromFile('6.bmp');
+    6: Memo7.Picture.LoadFromFile('7.bmp');
+    7: Memo7.Picture.LoadFromFile('8.bmp');
+    8: Memo7.Picture.LoadFromFile('9.bmp');
+    9: Memo7.Picture.LoadFromFile('10.bmp');
+    10: Memo7.Picture.LoadFromFile('11.bmp');
+    11: Memo7.Picture.LoadFromFile('12.bmp');
+    12: Memo7.Picture.LoadFromFile('13.bmp');
+    13: Memo7.Picture.LoadFromFile('14.bmp');
+    14: Memo7.Picture.LoadFromFile('15.bmp');
+  end;
+end;
+
+procedure TForm1.ComboBox9Select(Sender: TObject);
+begin
+  case ComboBox9.ItemIndex of
+  0: Memo8.Picture.LoadFromFile('1.bmp');
+  1: Memo8.Picture.LoadFromFile('2.bmp');
+  2: Memo8.Picture.LoadFromFile('3.bmp');
+  3: Memo8.Picture.LoadFromFile('4.bmp');
+  4: Memo8.Picture.LoadFromFile('5.bmp');
+  5: Memo8.Picture.LoadFromFile('6.bmp');
+  6: Memo8.Picture.LoadFromFile('7.bmp');
+  7: Memo8.Picture.LoadFromFile('8.bmp');
+  8: Memo8.Picture.LoadFromFile('9.bmp');
+  9: Memo8.Picture.LoadFromFile('10.bmp');
+  10: Memo8.Picture.LoadFromFile('11.bmp');
+  11: Memo8.Picture.LoadFromFile('12.bmp');
+  12: Memo8.Picture.LoadFromFile('13.bmp');
+  13: Memo8.Picture.LoadFromFile('14.bmp');
+  14: Memo8.Picture.LoadFromFile('15.bmp');
+  end;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  //--скрыть объекты цветов при нажатии кнопки
+  Label2.Visible := False;
+
+  Edit1.Visible := False;
+  Edit2.Visible := False;
+  Edit3.Visible := False;
+  Edit4.Visible := False;
+  Edit5.Visible := False;
+  Edit6.Visible := False;
+  Edit7.Visible := False;
+  Edit8.Visible := False;
+  Edit9.Visible := False;
+  Edit10.Visible := False;
+
+  ComboBox2.Visible := False;
+  ComboBox3.Visible := False;
+  ComboBox4.Visible := False;
+  ComboBox5.Visible := False;
+  ComboBox6.Visible := False;
+  ComboBox7.Visible := False;
+  ComboBox8.Visible := False;
+  ComboBox9.Visible := False;
+  ComboBox10.Visible := False;
+  ComboBox11.Visible := False;
+
+  Button1.Visible := False;
+  Button2.Visible := False;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+   randomize;
+
+  a := random(5);
+
+  if a=0 then
+  begin
+    Memo1.Picture.LoadFromFile('4.bmp');
+    Memo2.Picture.LoadFromFile('7.bmp');
+    Memo3.Picture.LoadFromFile('2.bmp');
+    Memo4.Picture.LoadFromFile('1.bmp');
+    Memo5.Picture.LoadFromFile('6.bmp');
+    Memo6.Picture.LoadFromFile('8.bmp');
+    Memo7.Picture.LoadFromFile('5.bmp');
+    Memo8.Picture.LoadFromFile('3.bmp');
+    Memo9.Picture.LoadFromFile('10.bmp');
+    Memo10.Picture.LoadFromFile('9.bmp');
+  end;
+
+  if a=1 then
+  begin
+    Memo1.Picture.LoadFromFile('10.bmp');
+    Memo2.Picture.LoadFromFile('9.bmp');
+    Memo3.Picture.LoadFromFile('8.bmp');
+    Memo4.Picture.LoadFromFile('7.bmp');
+    Memo5.Picture.LoadFromFile('6.bmp');
+    Memo6.Picture.LoadFromFile('5.bmp');
+    Memo7.Picture.LoadFromFile('4.bmp');
+    Memo8.Picture.LoadFromFile('3.bmp');
+    Memo9.Picture.LoadFromFile('2.bmp');
+    Memo10.Picture.LoadFromFile('1.bmp');
+  end;
+
+  if a=2 then
+  begin
+    Memo1.Picture.LoadFromFile('1.bmp');
+    Memo2.Picture.LoadFromFile('2.bmp');
+    Memo3.Picture.LoadFromFile('3.bmp');
+    Memo4.Picture.LoadFromFile('4.bmp');
+    Memo5.Picture.LoadFromFile('5.bmp');
+    Memo6.Picture.LoadFromFile('6.bmp');
+    Memo7.Picture.LoadFromFile('7.bmp');
+    Memo8.Picture.LoadFromFile('8.bmp');
+    Memo9.Picture.LoadFromFile('9.bmp');
+    Memo10.Picture.LoadFromFile('10.bmp');
+  end;
+
+  if a=3 then
+  begin
+    Memo1.Picture.LoadFromFile('5.bmp');
+    Memo2.Picture.LoadFromFile('4.bmp');
+    Memo3.Picture.LoadFromFile('3.bmp');
+    Memo4.Picture.LoadFromFile('2.bmp');
+    Memo5.Picture.LoadFromFile('1.bmp');
+    Memo6.Picture.LoadFromFile('6.bmp');
+    Memo7.Picture.LoadFromFile('7.bmp');
+    Memo8.Picture.LoadFromFile('8.bmp');
+    Memo9.Picture.LoadFromFile('9.bmp');
+    Memo10.Picture.LoadFromFile('10.bmp');
+  end;
+
+  if a=4 then
+  begin
+    Memo1.Picture.LoadFromFile('5.bmp');
+    Memo2.Picture.LoadFromFile('6.bmp');
+    Memo3.Picture.LoadFromFile('7.bmp');
+    Memo4.Picture.LoadFromFile('8.bmp');
+    Memo5.Picture.LoadFromFile('9.bmp');
+    Memo6.Picture.LoadFromFile('10.bmp');
+    Memo7.Picture.LoadFromFile('1.bmp');
+    Memo8.Picture.LoadFromFile('2.bmp');
+    Memo9.Picture.LoadFromFile('3.bmp');
+    Memo10.Picture.LoadFromFile('4.bmp');
+  end;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  //--скрыть объекты начальных заполнений при запуске программы
+  Label1.Visible := False;
+  Label3.Visible := False;
+
+  Edit11.Visible := False;
+  Edit12.Visible := False;
+
+  TrackBar1.Visible := False;
+  TrackBar2.Visible := False;
+
+  Button5.Visible := False;
+  Button3.Visible := False;
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+begin
+
+  lampo := random(101);
+  if lampo <= StrToInt(edit11.text) then lampg:=true else lampg:= false;
+
+  if lampg=true then
+  begin
+  Image42.Visible := True;
+  Image41.Visible := False;
+  end
+
+  else
+  begin
+  Image42.Visible := False;
+  Image41.Visible := True;
+  end;
+
+
+  if (Edit12.Text='0') then
+  Timer1.Enabled := False
+
+  else
+  begin
+  Timer1.Enabled := True;
+  randomize;
+
+  b := random(10);
+
+  if b=0 then
+    begin
+      if k=1 then
+      begin
+        if not(lampg) then
+        begin
+          Image1.Top := Image1.Top-50;
+          Image1.Picture.LoadFromFile('3p.png');
+          k := k + 1;
+          p := p + 1;
+        end
+        else
+        begin
+          if p > 0 then
+          begin
+            Image1.Top := Image1.Top+50;
+            Image1.Picture.LoadFromFile('3p.png');
+            p := p - 1;
+            k := k + 1;
+          end
+          else
+          begin
+            p := 0;
+          end;
+        end;
+      end
+
+      else
+      begin
+        if not(lampg) then
+        begin
+          Image1.Top := Image1.Top-50;
+          Image1.Picture.LoadFromFile('1p.png');
+          k := k - 1;
+          p := p + 1;
+        end
+        else
+        begin
+          if p > 0 then
+          begin
+            Image1.Top := Image1.Top+50;
+            Image1.Picture.LoadFromFile('1p.png');
+            p := p - 1;
+            k := k - 1;
+          end
+          else
+          begin
+            p := 0;
+          end;
+        end;
+      end;
+
+    end;
+
+  if b=1 then
+    begin
+      if g=1 then
+      begin
+        if not(lampg) then
+        begin
+          Image2.Top := Image2.Top-50;
+          Image2.Picture.LoadFromFile('3p.png');
+          g := g + 1;
+          pp := pp + 1;
+        end
+        else
+        begin
+          if pp > 0 then
+          begin
+            Image2.Top := Image2.Top+50;
+            Image2.Picture.LoadFromFile('3p.png');
+            pp := pp - 1;
+            g := g + 1;
+          end
+          else
+          begin
+            pp := 0;
+          end;
+        end;
+      end
+
+      else
+      begin
+        if not(lampg) then
+        begin
+          Image2.Top := Image2.Top-50;
+          Image2.Picture.LoadFromFile('1p.png');
+          g := g - 1;
+          pp := pp + 1;
+        end
+        else
+        begin
+          if pp > 0 then
+          begin
+            Image2.Top := Image2.Top+50;
+            Image2.Picture.LoadFromFile('1p.png');
+            pp := pp - 1;
+            g := g  - 1;
+          end
+          else
+          begin
+            pp := 0;
+          end;
+        end;
+      end;
+
+    end;
+
+  if b=2 then
+  begin
+      if l=1 then
+      begin
+        if not(lampg) then
+        begin
+          Image3.Top := Image3.Top-50;
+          Image3.Picture.LoadFromFile('3p.png');
+          l := l + 1;
+          ppp := ppp + 1;
+        end
+        else
+        begin
+          if ppp > 0 then
+          begin
+            Image3.Top := Image3.Top+50;
+            Image3.Picture.LoadFromFile('3p.png');
+            ppp := ppp - 1;
+            l := l + 1;
+          end
+          else
+          begin
+            ppp := 0;
+          end;
+        end;
+      end
+
+      else
+      begin
+        if not(lampg) then
+        begin
+          Image3.Top := Image3.Top-50;
+          Image3.Picture.LoadFromFile('1p.png');
+          l := l - 1;
+          ppp := ppp + 1;
+        end
+        else
+        begin
+          if ppp > 0 then
+          begin
+            Image3.Top := Image3.Top+50;
+            Image3.Picture.LoadFromFile('1p.png');
+            ppp := ppp - 1;
+            l := l - 1;
+          end
+          else
+          begin
+            ppp := 0;
+          end;
+        end;
+      end;
+
+    end;
+
+
+  if b=3 then
+  begin
+      if m=1 then
+      begin
+        if not(lampg) then
+        begin
+          Image4.Top := Image4.Top-50;
+          Image4.Picture.LoadFromFile('3p.png');
+          m := m + 1;
+          pppp := pppp + 1;
+        end
+        else
+        begin
+          if pppp > 0 then
+          begin
+            Image4.Top := Image4.Top+50;
+            Image4.Picture.LoadFromFile('3p.png');
+            pppp := pppp - 1;
+            m := m + 1;
+          end
+          else
+          begin
+            pppp := 0;
+          end;
+        end;
+      end
+
+      else
+      begin
+        if not(lampg) then
+        begin
+          Image4.Top := Image4.Top-50;
+          Image4.Picture.LoadFromFile('1p.png');
+          m := m - 1;
+          pppp := pppp + 1;
+        end
+        else
+        begin
+          if pppp > 0 then
+          begin
+            Image4.Top := Image4.Top+50;
+            Image4.Picture.LoadFromFile('1p.png');
+            pppp := pppp - 1;
+            m := m - 1;
+          end
+          else
+          begin
+            pppp := 0;
+          end;
+        end;
+      end;
+
+    end;
+
+  if b=4 then
+  begin
+      if n=1 then
+      begin
+        if not(lampg) then
+        begin
+          Image5.Top := Image5.Top-50;
+          Image5.Picture.LoadFromFile('3p.png');
+          n := n + 1;
+          p5 := p5 + 1;
+        end
+        else
+        begin
+          if p5 > 0 then
+          begin
+            Image5.Top := Image5.Top+50;
+            Image5.Picture.LoadFromFile('3p.png');
+            p5 := p5 - 1;
+            n := n + 1;
+          end
+          else
+          begin
+            p5 := 0;
+          end;
+        end;
+      end
+
+      else
+      begin
+        if not(lampg) then
+        begin
+          Image5.Top := Image5.Top-50;
+          Image5.Picture.LoadFromFile('1p.png');
+          n := n - 1;
+          p5 := p5 + 1;
+        end
+        else
+        begin
+          if p5 > 0 then
+          begin
+            Image5.Top := Image5.Top+50;
+            Image5.Picture.LoadFromFile('1p.png');
+            p5 := p5 - 1;
+            n := n - 1;
+          end
+          else
+          begin
+            p5 := 0;
+          end;
+        end;
+      end;
+
+    end;
+
+  if b=5 then
+  begin
+      if o=1 then
+      begin
+        if not(lampg) then
+        begin
+          Image6.Top := Image6.Top-50;
+          Image6.Picture.LoadFromFile('3p.png');
+          o := o + 1;
+          p6 := p6 + 1;
+        end
+        else
+        begin
+          if p6 > 0 then
+          begin
+            Image6.Top := Image6.Top+50;
+            Image6.Picture.LoadFromFile('3p.png');
+            p6 := p6 - 1;
+            o := o + 1;
+          end
+          else
+          begin
+            p6 := 0;
+          end;
+        end;
+      end
+
+      else
+      begin
+        if not(lampg) then
+        begin
+          Image6.Top := Image6.Top-50;
+          Image6.Picture.LoadFromFile('1p.png');
+          o := o - 1;
+          p6 := p6 + 1;
+        end
+        else
+        begin
+          if p6 > 0 then
+          begin
+            Image6.Top := Image6.Top+50;
+            Image6.Picture.LoadFromFile('1p.png');
+            p6 := p6 - 1;
+            o := o - 1;
+          end
+          else
+          begin
+            p6 := 0;
+          end;
+        end;
+      end;
+
+    end;
+
+  if b=6 then
+  begin
+      if q=1 then
+      begin
+        if not(lampg) then
+        begin
+          Image7.Top := Image7.Top-50;
+          Image7.Picture.LoadFromFile('3p.png');
+          q := q + 1;
+          p7 := p7 + 1;
+        end
+        else
+        begin
+          if p7 > 0 then
+          begin
+            Image7.Top := Image7.Top+50;
+            Image7.Picture.LoadFromFile('3p.png');
+            p7 := p7 - 1;
+            q := q + 1;
+          end
+          else
+          begin
+            p7 := 0;
+          end;
+        end;
+      end
+
+      else
+      begin
+        if not(lampg) then
+        begin
+          Image7.Top := Image7.Top-50;
+          Image7.Picture.LoadFromFile('1p.png');
+          q := q - 1;
+          p7 := p7 + 1;
+        end
+        else
+        begin
+          if p7 > 0 then
+          begin
+            Image7.Top := Image7.Top+50;
+            Image7.Picture.LoadFromFile('1p.png');
+            p7 := p7 - 1;
+            q := q - 1;
+          end
+          else
+          begin
+            p7 := 0;
+          end;
+        end;
+      end;
+
+    end;
+
+  if b=7 then
+  begin
+      if w=1 then
+      begin
+        if not(lampg) then
+        begin
+          Image8.Top := Image8.Top-50;
+          Image8.Picture.LoadFromFile('3p.png');
+          w := w + 1;
+          p8 := p8 + 1;
+        end
+        else
+        begin
+          if p8 > 0 then
+          begin
+            Image8.Top := Image8.Top+50;
+            Image8.Picture.LoadFromFile('3p.png');
+            p8 := p8 - 1;
+            w := w + 1;
+          end
+          else
+          begin
+            p8 := 0;
+          end;
+        end;
+      end
+
+      else
+      begin
+        if not(lampg) then
+        begin
+          Image8.Top := Image8.Top-50;
+          Image8.Picture.LoadFromFile('1p.png');
+          w := w - 1;
+          p8 := p8 + 1;
+        end
+        else
+        begin
+          if p8 > 0 then
+          begin
+            Image8.Top := Image8.Top+50;
+            Image8.Picture.LoadFromFile('1p.png');
+            p8 := p8 - 1;
+            w := w - 1;
+          end
+          else
+          begin
+            p8 := 0;
+          end;
+        end;
+      end;
+
+    end;
+
+  if b=8 then
+  begin
+      if e=1 then
+      begin
+        if not(lampg) then
+        begin
+          Image9.Top := Image9.Top-50;
+          Image9.Picture.LoadFromFile('3p.png');
+          e := e + 1;
+          p9 := p9 + 1;
+        end
+        else
+        begin
+          if p9 > 0 then
+          begin
+            Image9.Top := Image9.Top+50;
+            Image9.Picture.LoadFromFile('3p.png');
+            p9 := p9 - 1;
+            e := e + 1;
+          end
+          else
+          begin
+            p9 := 0;
+          end;
+        end;
+      end
+
+      else
+      begin
+        if not(lampg) then
+        begin
+          Image9.Top := Image9.Top-50;
+          Image9.Picture.LoadFromFile('1p.png');
+          e := e - 1;
+          p9 := p9 + 1;
+        end
+        else
+        begin
+          if p9 > 0 then
+          begin
+            Image9.Top := Image9.Top+50;
+            Image9.Picture.LoadFromFile('1p.png');
+            p9 := p9 - 1;
+            e := e - 1;
+          end
+          else
+          begin
+            p9 := 0;
+          end;
+        end;
+      end;
+
+    end;
+
+  if b=9 then
+  begin
+      if ee=1 then
+      begin
+        if not(lampg) then
+        begin
+          Image10.Top := Image10.Top-50;
+          Image10.Picture.LoadFromFile('3p.png');
+          ee := ee + 1;
+          p10 := p10 + 1;
+        end
+        else
+        begin
+          if p10 > 0 then
+          begin
+            Image10.Top := Image10.Top+50;
+            Image10.Picture.LoadFromFile('3p.png');
+            p10 := p10 - 1;
+            ee := ee + 1;
+          end
+          else
+          begin
+            p10 := 0;
+          end;
+        end;
+      end
+
+      else
+      begin
+        if not(lampg) then
+        begin
+          Image10.Top := Image10.Top-50;
+          Image10.Picture.LoadFromFile('1p.png');
+          ee := ee - 1;
+          p10 := p10 + 1;
+        end
+        else
+        begin
+          if p10 > 0 then
+          begin
+            Image10.Top := Image10.Top+50;
+            Image10.Picture.LoadFromFile('1p.png');
+            p10 := p10 - 1;
+            ee := ee - 1;
+          end
+          else
+          begin
+            p10 := 0;
+          end
+        end;
+      end;
+
+    end;
+
+
+ //--скрываем альпенистов, которые прошли всю дорожку
+ if p=11 then Image1.Visible := False;
+ if pp=11 then Image2.Visible := False;
+ if ppp=11 then Image3.Visible := False;
+ if pppp=11 then Image4.Visible := False;
+ if p5=11 then Image5.Visible := False;
+ if p6=11 then Image6.Visible := False;
+ if p7=11 then Image7.Visible := False;
+ if p8=11 then Image8.Visible := False;
+ if p9=11 then Image9.Visible := False;
+ if p10=11 then Image10.Visible := False;
+
+ end;
+
+  //--определяем первые три места
+
+  if (u1=11) and not(u2=11) and not(u3=11) and not(u4=11) and not(u5=11) and not(u6=11) and not(u7=11) and not(u8=11) and not(u9=11) and not(u10=11) then
+  begin
+     Image11.Visible := True;
+  end;
+
+  if not(u1=11) and (u2=11) and not(u3=11) and not(u4=11) and not(u5=11) and not(u6=11) and not(u7=11) and not(u8=11) and not(u9=11) and not(u10=11) then
+  begin
+     Image14.Visible := True;
+  end;
+
+  if not(u1=11) and not(u2=11) and (u3=11) and not(u4=11) and not(u5=11) and not(u6=11) and not(u7=11) and not(u8=11) and not(u9=11) and not(u10=11) then
+  begin
+     Image17.Visible := True;
+  end;
+
+  if not(u1=11) and not(u2=11) and not(u3=11) and (u4=11) and not(u5=11) and not(u6=11) and not(u7=11) and not(u8=11) and not(u9=11) and not(u10=11) then
+  begin
+     Image20.Visible := True;
+  end;
+
+  if not(u1=11) and not(u2=11) and not(u3=11) and not(u4=11) and (u5=11) and not(u6=11) and not(u7=11) and not(u8=11) and not(u9=11) and not(u10=11) then
+  begin
+     Image23.Visible := True;
+  end;
+
+  if not(u1=11) and not(u2=11) and not(u3=11) and not(u4=11) and not(u5=11) and (u6=11) and not(u7=11) and not(u8=11) and not(u9=11) and not(u10=11) then
+  begin
+     Image26.Visible := True;
+  end;
+
+  if not(u1=11) and not(u2=11) and not(u3=11) and not(u4=11) and not(u5=11) and not(u6=11) and (u7=11) and not(u8=11) and not(u9=11) and not(u10=11) then
+  begin
+     Image29.Visible := True;
+  end;
+
+  if not(u1=11) and not(u2=11) and not(u3=11) and not(u4=11) and not(u5=11) and not(u6=11) and not(u7=11) and (u8=11) and not(u9=11) and not(u10=11) then
+  begin
+     Image32.Visible := True;
+  end;
+
+  if not(u1=11) and not(u2=11) and not(u3=11) and not(u4=11) and not(u5=11) and not(u6=11) and not(u7=11) and (u8=11) and (u9=11) and not(u10=11) then
+  begin
+     Image35.Visible := True;
+  end;
+
+  if not(u1=11) and not(u2=11) and not(u3=11) and not(u4=11) and not(u5=11) and not(u6=11) and not(u7=11) and not(u8=11) and not(u9=11) and (u10=11) then
+  begin
+     Image38.Visible := True;
+  end;
+  end;
+
+
+procedure TForm1.Button5Click(Sender: TObject);
+begin
+  //--сброс ползунков
+  Edit11.Text := IntToStr(25);
+  Edit12.Text := IntToStr(50);
+end;
+
+procedure TForm1.Button6Click(Sender: TObject);
+begin
+  //--скрытие мест после сброса
+  Image11.Visible := False;
+  Image12.Visible := False;
+  Image13.Visible := False;
+  Image14.Visible := False;
+  Image15.Visible := False;
+  Image16.Visible := False;
+  Image17.Visible := False;
+  Image18.Visible := False;
+  Image19.Visible := False;
+  Image20.Visible := False;
+  Image21.Visible := False;
+  Image22.Visible := False;
+  Image23.Visible := False;
+  Image24.Visible := False;
+  Image25.Visible := False;
+  Image26.Visible := False;
+  Image27.Visible := False;
+  Image28.Visible := False;
+  Image29.Visible := False;
+  Image30.Visible := False;
+  Image31.Visible := False;
+  Image32.Visible := False;
+  Image33.Visible := False;
+  Image34.Visible := False;
+  Image35.Visible := False;
+  Image36.Visible := False;
+  Image37.Visible := False;
+  Image38.Visible := False;
+  Image39.Visible := False;
+  Image40.Visible := False;
+  Timer1.Enabled := False;
+
+  Image1.Top := Image1.Top + (50 * p);
+  Image2.Top := Image2.Top + (50 * pp);
+  Image3.Top := Image3.Top + (50 * ppp);
+  Image4.Top := Image4.Top + (50 * pppp);
+  Image5.Top := Image5.Top + (50 * p5);
+  Image6.Top := Image6.Top + (50 * p6);
+  Image7.Top := Image7.Top + (50 * p7);
+  Image8.Top := Image8.Top + (50 * p8);
+  Image9.Top := Image9.Top + (50 * p9);
+  Image10.Top := Image10.Top + (50 * p10);
+
+  p:=0;
+  k:=1;
+
+  pp:=0;
+  g:=1;
+
+  ppp:=0;
+  l:=1;
+
+  pppp:=0;
+  m:=1;
+
+  p5:=0;
+  n:=1;
+
+  p6:=0;
+  o:=1;
+
+  p7:=0;
+  q:=1;
+
+  p8:=0;
+  w:=1;
+
+  p9:=0;
+  e:=1;
+
+  p10:=0;
+  ee:=1;
+
+  u11 := 0;
+  u22 := 0;
+  u33 := 0;
+  u44 := 0;
+  u55 := 0;
+  u66 := 0;
+  u77 := 0;
+  u88 := 0;
+  u99 := 0;
+  u1010 := 0;
+
+  Image1.Visible := True;
+  Image2.Visible := True;
+  Image3.Visible := True;
+  Image4.Visible := True;
+  Image5.Visible := True;
+  Image6.Visible := True;
+  Image7.Visible := True;
+  Image8.Visible := True;
+  Image9.Visible := True;
+  Image10.Visible := True;
+
+
+  u1 := 0;
+  u2 := 0;
+  u3 := 0;
+  u4 := 0;
+  u5 := 0;
+  u6 := 0;
+  u7 := 0;
+  u8 := 0;
+  u9 := 0;
+  u10 := 0;
+
+  Image1.Picture.LoadFromFile('2p.png');
+  Image2.Picture.LoadFromFile('2p.png');
+  Image3.Picture.LoadFromFile('2p.png');
+  Image4.Picture.LoadFromFile('2p.png');
+  Image5.Picture.LoadFromFile('2p.png');
+  Image6.Picture.LoadFromFile('2p.png');
+  Image7.Picture.LoadFromFile('2p.png');
+  Image8.Picture.LoadFromFile('2p.png');
+  Image9.Picture.LoadFromFile('2p.png');
+  Image10.Picture.LoadFromFile('2p.png');
+end;
+
+procedure TForm1.Button7Click(Sender: TObject);
+begin
+  Timer1.Enabled := False;
+end;
+
+
+procedure TForm1.Edit11Change(Sender: TObject);
+begin
+  //--привязка edit11 с ползунком1
+  trackbar1.Position:=strtoint(edit11.text);
+
+end;
+
+procedure TForm1.Edit12Change(Sender: TObject);
+begin
+  //--привязка edit12 с ползунком2
+  trackbar2.Position:=strtoint(edit12.text);
+
+  //--меняем значение тайера относительно ползунка+edita12
+  Timer1.Interval := 100 - StrToInt(Edit12.Text);
+end;
+
+procedure TForm1.Edit13Change(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.MenuItem7Click(Sender: TObject);
+begin
+  //--показать объекты цветов при запуске программы
+  Label2.Visible := True;
+
+  Edit1.Visible := True;
+  Edit2.Visible := True;
+  Edit3.Visible := True;
+  Edit4.Visible := True;
+  Edit5.Visible := True;
+  Edit6.Visible := True;
+  Edit7.Visible := True;
+  Edit8.Visible := True;
+  Edit9.Visible := True;
+  Edit10.Visible := True;
+
+  ComboBox2.Visible := True;
+  ComboBox3.Visible := True;
+  ComboBox4.Visible := True;
+  ComboBox5.Visible := True;
+  ComboBox6.Visible := True;
+  ComboBox7.Visible := True;
+  ComboBox8.Visible := True;
+  ComboBox9.Visible := True;
+  ComboBox10.Visible := True;
+  ComboBox11.Visible := True;
+
+  Button1.Visible := True;
+  Button2.Visible := True;
+
+end;
+
+procedure TForm1.MenuItem8Click(Sender: TObject);
+begin
+  //--показать объекты начальных заполнений при запуске программы
+  Label1.Visible := True;
+  Label3.Visible := True;
+
+  Edit11.Visible := True;
+  Edit12.Visible := True;
+
+  TrackBar1.Visible := True;
+  TrackBar2.Visible := True;
+
+  Button5.Visible := True;
+  Button3.Visible := True;
+end;
+
+procedure TForm1.Timer1Timer(Sender: TObject);
+begin
+  Button4.Click;
+end;
+
+procedure TForm1.TrackBar1Change(Sender: TObject);
+begin
+  //--запись значения с ползунка в edit11
+  edit11.Text:=floattostr(TrackBar1.Position);
+end;
+
+procedure TForm1.TrackBar2Change(Sender: TObject);
+begin
+  //--запись значения с ползунка в edit12
+  edit12.Text:=floattostr(TrackBar2.Position);
+end;
+
+end.
+                    
