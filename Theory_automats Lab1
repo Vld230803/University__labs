@@ -119,7 +119,6 @@ type
     procedure Button7Click(Sender: TObject);
     procedure ComboBox10Select(Sender: TObject);
     procedure ComboBox11Select(Sender: TObject);
-    procedure ComboBox2Change(Sender: TObject);
     procedure ComboBox2Select(Sender: TObject);
     procedure ComboBox3Select(Sender: TObject);
     procedure ComboBox4Select(Sender: TObject);
@@ -582,11 +581,6 @@ begin
   end;
 end;
 
-procedure TForm1.ComboBox2Change(Sender: TObject);
-begin
-
-end;
-
 procedure TForm1.ComboBox2Select(Sender: TObject);
 begin
   case ComboBox2.ItemIndex of
@@ -882,6 +876,27 @@ end;
 procedure TForm1.Button4Click(Sender: TObject);
 begin
 
+  Button1.Enabled := False;
+
+  ComboBox2.Enabled := False;
+  ComboBox3.Enabled := False;
+  ComboBox4.Enabled := False;
+  ComboBox5.Enabled := False;
+  ComboBox6.Enabled := False;
+  ComboBox7.Enabled := False;
+  ComboBox8.Enabled := False;
+  ComboBox9.Enabled := False;
+  ComboBox10.Enabled := False;
+  ComboBox11.Enabled := False;
+
+  Edit11.ReadOnly := True;
+  TrackBar1.Enabled := False;
+
+  Edit12.ReadOnly := True;
+  TrackBar2.Enabled := False;
+
+  Button5.Enabled := False;
+
   lampo := random(101);
   if lampo <= StrToInt(edit11.text) then lampg:=true else lampg:= false;
 
@@ -909,6 +924,8 @@ begin
   b := random(10);
 
   if b=0 then
+  if p<11 then
+    begin
     begin
       if k=1 then
       begin
@@ -959,10 +976,12 @@ begin
           end;
         end;
       end;
-
+    end;
     end;
 
   if b=1 then
+  if pp<11 then
+    begin
     begin
       if g=1 then
       begin
@@ -1015,8 +1034,11 @@ begin
       end;
 
     end;
+    end;
 
   if b=2 then
+  if ppp<11 then
+    begin
   begin
       if l=1 then
       begin
@@ -1069,9 +1091,12 @@ begin
       end;
 
     end;
+  end;
 
 
   if b=3 then
+  if pppp<11 then
+    begin
   begin
       if m=1 then
       begin
@@ -1124,8 +1149,11 @@ begin
       end;
 
     end;
+  end;
 
   if b=4 then
+  if p5<11 then
+    begin
   begin
       if n=1 then
       begin
@@ -1178,8 +1206,11 @@ begin
       end;
 
     end;
+  end;
 
   if b=5 then
+  if p6<11 then
+    begin
   begin
       if o=1 then
       begin
@@ -1232,8 +1263,11 @@ begin
       end;
 
     end;
+  end;
 
   if b=6 then
+  if p7<11 then
+    begin
   begin
       if q=1 then
       begin
@@ -1286,8 +1320,11 @@ begin
       end;
 
     end;
+  end;
 
   if b=7 then
+  if p8<11 then
+    begin
   begin
       if w=1 then
       begin
@@ -1340,8 +1377,11 @@ begin
       end;
 
     end;
+  end;
 
   if b=8 then
+  if p9<11 then
+    begin
   begin
       if e=1 then
       begin
@@ -1394,8 +1434,11 @@ begin
       end;
 
     end;
+  end;
 
   if b=9 then
+  if p10<11 then
+    begin
   begin
       if ee=1 then
       begin
@@ -1448,72 +1491,162 @@ begin
       end;
 
     end;
+  end;
 
 
  //--скрываем альпенистов, которые прошли всю дорожку
- if p=11 then Image1.Visible := False;
- if pp=11 then Image2.Visible := False;
- if ppp=11 then Image3.Visible := False;
- if pppp=11 then Image4.Visible := False;
- if p5=11 then Image5.Visible := False;
- if p6=11 then Image6.Visible := False;
- if p7=11 then Image7.Visible := False;
- if p8=11 then Image8.Visible := False;
- if p9=11 then Image9.Visible := False;
- if p10=11 then Image10.Visible := False;
+    if p=11 then
+     begin
+     Image1.Visible := False;
+     p:=11;
+     end;
+     if pp=11 then
+     begin
+     Image2.Visible := False;
+     pp:=11;
+     end;
+     if ppp=11 then
+     begin
+     Image3.Visible := False;
+     ppp:=11;
+     end;
+     if pppp=11 then
+     begin
+     Image4.Visible := False;
+     pppp:=11;
+     end;
+     if p5=11 then
+     begin
+     Image5.Visible := False;
+     p5:=11;
+     end;
+     if p6=11 then
+     begin
+     Image6.Visible := False;
+     p6:=11;
+     end;
+     if p7=11 then
+     begin
+     Image7.Visible := False;
+     p7:=11;
+     end;
+     if p8=11 then
+     begin
+     Image8.Visible := False;
+     p8:=11;
+     end;
+     if p9=11 then
+     begin
+     Image9.Visible := False;
+     p9:=11;
+     end;
+     if p10=11 then
+     begin
+     Image10.Visible := False;
+     p10:=11;
+     end;
 
- end;
 
   //--определяем первые три места
 
-  if (u1=11) and not(u2=11) and not(u3=11) and not(u4=11) and not(u5=11) and not(u6=11) and not(u7=11) and not(u8=11) and not(u9=11) and not(u10=11) then
+  if (p=11) and not(pp=11) and not(ppp=11) and not(pppp=11) and not(p5=11) and not(p6=11) and not(p7=11) and not(p8=11) and not(p9=11) and not(p10=11) then
   begin
      Image11.Visible := True;
+
+  if (p=11) and (pp=11) and not(ppp=11) and not(pppp=11) and not(p5=11) and not(p6=11) and not(p7=11) and not(p8=11) and not(p9=11) and not(p10=11) then
+  begin
+     Image15.Visible := True;
   end;
 
-  if not(u1=11) and (u2=11) and not(u3=11) and not(u4=11) and not(u5=11) and not(u6=11) and not(u7=11) and not(u8=11) and not(u9=11) and not(u10=11) then
+  if (p=11) and not(pp=11) and (ppp=11) and not(pppp=11) and not(p5=11) and not(p6=11) and not(p7=11) and not(p8=11) and not(p9=11) and not(p10=11) then
+  begin
+     Image18.Visible := True;
+  end;
+
+  if (p=11) and not(pp=11) and not(ppp=11) and (pppp=11) and not(p5=11) and not(p6=11) and not(p7=11) and not(p8=11) and not(p9=11) and not(p10=11) then
+  begin
+     Image21.Visible := True;
+  end;
+
+  if (p=11) and not(pp=11) and not(ppp=11) and not(pppp=11) and (p5=11) and not(p6=11) and not(p7=11) and not(p8=11) and not(p9=11) and not(p10=11) then
+  begin
+     Image24.Visible := True;
+  end;
+
+  if (p=11) and not(pp=11) and not(ppp=11) and not(pppp=11) and not(p5=11) and (p6=11) and not(p7=11) and not(p8=11) and not(p9=11) and not(p10=11) then
+  begin
+     Image27.Visible := True;
+  end;
+
+  if (p=11) and not(pp=11) and not(ppp=11) and not(pppp=11) and not(p5=11) and not(p6=11) and (p7=11) and not(p8=11) and not(p9=11) and not(p10=11) then
+  begin
+     Image30.Visible := True;
+  end;
+
+  if (p=11) and not(pp=11) and not(ppp=11) and not(pppp=11) and not(p5=11) and not(p6=11) and not(p7=11) and (p8=11) and not(p9=11) and not(p10=11) then
+  begin
+     Image33.Visible := True;
+  end;
+
+  if (p=11) and not(pp=11) and not(ppp=11) and not(pppp=11) and not(p5=11) and not(p6=11) and not(p7=11) and not(p8=11) and (p9=11) and not(p10=11) then
+  begin
+     Image36.Visible := True;
+  end;
+
+  if (p=11) and not(pp=11) and not(ppp=11) and not(pppp=11) and not(p5=11) and not(p6=11) and not(p7=11) and not(p8=11) and not(p9=11) and (p10=11) then
+  begin
+     Image39.Visible := True;
+  end;
+
+  end;
+
+
+
+
+  if not(p=11) and (pp=11) and not(ppp=11) and not(pppp=11) and not(p5=11) and not(p6=11) and not(p7=11) and not(p8=11) and not(p9=11) and not(p10=11) then
   begin
      Image14.Visible := True;
   end;
 
-  if not(u1=11) and not(u2=11) and (u3=11) and not(u4=11) and not(u5=11) and not(u6=11) and not(u7=11) and not(u8=11) and not(u9=11) and not(u10=11) then
+  if not(p=11) and not(pp=11) and (ppp=11) and not(pppp=11) and not(p5=11) and not(p6=11) and not(p7=11) and not(p8=11) and not(p9=11) and not(p10=11) then
   begin
      Image17.Visible := True;
   end;
 
-  if not(u1=11) and not(u2=11) and not(u3=11) and (u4=11) and not(u5=11) and not(u6=11) and not(u7=11) and not(u8=11) and not(u9=11) and not(u10=11) then
+  if not(p=11) and not(pp=11) and not(ppp=11) and (pppp=11) and not(p5=11) and not(p6=11) and not(p7=11) and not(p8=11) and not(p9=11) and not(p10=11) then
   begin
      Image20.Visible := True;
   end;
 
-  if not(u1=11) and not(u2=11) and not(u3=11) and not(u4=11) and (u5=11) and not(u6=11) and not(u7=11) and not(u8=11) and not(u9=11) and not(u10=11) then
+  if not(p=11) and not(pp=11) and not(ppp=11) and not(pppp=11) and (p5=11) and not(p6=11) and not(p7=11) and not(p8=11) and not(p9=11) and not(p10=11) then
   begin
      Image23.Visible := True;
   end;
 
-  if not(u1=11) and not(u2=11) and not(u3=11) and not(u4=11) and not(u5=11) and (u6=11) and not(u7=11) and not(u8=11) and not(u9=11) and not(u10=11) then
+  if not(p=11) and not(pp=11) and not(ppp=11) and not(pppp=11) and not(p5=11) and (p6=11) and not(p7=11) and not(p8=11) and not(p9=11) and not(p10=11) then
   begin
      Image26.Visible := True;
   end;
 
-  if not(u1=11) and not(u2=11) and not(u3=11) and not(u4=11) and not(u5=11) and not(u6=11) and (u7=11) and not(u8=11) and not(u9=11) and not(u10=11) then
+  if not(p=11) and not(pp=11) and not(ppp=11) and not(pppp=11) and not(p5=11) and not(p6=11) and (p7=11) and not(p8=11) and not(p9=11) and not(p10=11) then
   begin
      Image29.Visible := True;
   end;
 
-  if not(u1=11) and not(u2=11) and not(u3=11) and not(u4=11) and not(u5=11) and not(u6=11) and not(u7=11) and (u8=11) and not(u9=11) and not(u10=11) then
+  if not(p=11) and not(pp=11) and not(ppp=11) and not(pppp=11) and not(p5=11) and not(p6=11) and not(p7=11) and (p8=11) and not(p9=11) and not(p10=11) then
   begin
      Image32.Visible := True;
   end;
 
-  if not(u1=11) and not(u2=11) and not(u3=11) and not(u4=11) and not(u5=11) and not(u6=11) and not(u7=11) and (u8=11) and (u9=11) and not(u10=11) then
+  if not(p=11) and not(pp=11) and not(ppp=11) and not(pppp=11) and not(p5=11) and not(p6=11) and not(p7=11) and not(p8=11) and (p9=11) and not(p10=11) then
   begin
      Image35.Visible := True;
   end;
 
-  if not(u1=11) and not(u2=11) and not(u3=11) and not(u4=11) and not(u5=11) and not(u6=11) and not(u7=11) and not(u8=11) and not(u9=11) and (u10=11) then
+  if not(p=11) and not(pp=11) and not(ppp=11) and not(pppp=11) and not(p5=11) and not(p6=11) and not(p7=11) and not(p8=11) and not(p9=11) and (p10=11) then
   begin
      Image38.Visible := True;
+  end;
   end;
   end;
 
@@ -1527,6 +1660,28 @@ end;
 
 procedure TForm1.Button6Click(Sender: TObject);
 begin
+
+   Button1.Enabled := True;
+
+  ComboBox2.Enabled := True;
+  ComboBox3.Enabled := True;
+  ComboBox4.Enabled := True;
+  ComboBox5.Enabled := True;
+  ComboBox6.Enabled := True;
+  ComboBox7.Enabled := True;
+  ComboBox8.Enabled := True;
+  ComboBox9.Enabled := True;
+  ComboBox10.Enabled := True;
+  ComboBox11.Enabled := True;
+
+  Edit11.ReadOnly := False;
+  TrackBar1.Enabled := True;
+
+  Edit12.ReadOnly := False;
+  TrackBar2.Enabled := True;
+
+  Button5.Enabled := True;
+
   //--скрытие мест после сброса
   Image11.Visible := False;
   Image12.Visible := False;
@@ -1650,6 +1805,15 @@ end;
 procedure TForm1.Button7Click(Sender: TObject);
 begin
   Timer1.Enabled := False;
+
+  Edit11.ReadOnly := False;
+  TrackBar1.Enabled := True;
+
+  Edit12.ReadOnly := False;
+  TrackBar2.Enabled := True;
+
+  Button5.Enabled := True;
+
 end;
 
 
@@ -1740,4 +1904,4 @@ begin
 end;
 
 end.
-                    
+                                                        
